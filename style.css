@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+html {
+    position: relative;
+    min-height: 100%;
+    display: block;
+    background-color: #FBF8F1;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(5, 1fr); */
+    grid-gap: 10px;
+}
+
+#brand{
+    font-size: 16px;
+    /* justify-content: right; */
+    text-align: right;
+    padding-bottom: 5px;
+}
+.calculator{
+    border-radius: 5px;
+    border: 2px;
+    border-style: solid;
+    padding: 20px;
+    padding-top: 14px;
+    background-color: #5dcac875;
+    /* background-color: #B7CADB; */
+}
+
+#deleteButton{
+    background-color: #fbd6d2;
+}
+#deleteButton:hover{
+    background-color: #f8b5ae;
+}
+
+#clearButton, #deleteButton{
+    grid-column: span 2;
+    aspect-ratio: auto;
+}
+button{
+    min-height: 60px;
+    /* box-sizing: border-box; */
+    /* border-width: 2px; */
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #F7ECDE;
+    border-color: hsl(0, 13%, 3%);
+    /* padding: 20px; */
+    aspect-ratio: 1;
+    /* font-size: 22px; */
+}
+button:hover{
+    background-color: hsl(22, 71%, 88%);
+}
+.screen{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #FBF8F1;
+}
+
+#pastScreen{
+    min-height: 32px;
+}
+
+#currentScreen{
+    min-height: 64px;
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer{
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
