@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <main class="main">
         <div class="calculator">
             <div id="brand">calculator</div>
-            <div class="screen">
-                <div id="pastScreen"></div>
-                <div id="currentScreen"></div>
+            <div id="screen">
+                <div id="pastScreen" class="screen"></div>
+                <div id="currentScreen" class="screen"></div>
             </div>
             <div class="gridContainer">
                 <button id="clearButton">Clear</button>
@@ -25,19 +27,19 @@
                 <button id="7" data-number="7">7</button>
                 <button id="8" data-number="8">8</button>
                 <button id="9" data-number="9">9</button>
-                <button id="/" data-operator="/">/</button>
+                <button id="/" data-operator="/">÷</button>
                 <button id="4" data-number="4">4</button>
                 <button id="5" data-number="5">5</button>
                 <button id="6" data-number="6">6</button>
-                <button id="x" data-operator="x">×</button>
-                <button id="4" data-number="3">3</button>
-                <button id="5" data-number="2">2</button>
-                <button id="6" data-number="1">1</button>
-                <button id="x" data-operator="-">-</button>
-                <button id="4" data-operator=".">.</button>
-                <button id="5" data-number="0">0</button>
-                <button id="6" data-operator="=">=</button>
-                <button id="x" data-operator="+">+</button>
+                <button id="*" data-operator="*">×</button>
+                <button id="3" data-number="3">3</button>
+                <button id="2" data-number="2">2</button>
+                <button id="1" data-number="1">1</button>
+                <button id="-" data-operator="-">-</button>
+                <button id="dot">.</button>
+                <button id="0" data-number="0">0</button>
+                <button id="=" data-operator="=">=</button>
+                <button id="+" data-operator="+">+</button>
             </div>
         </div>
     </main>
@@ -45,4 +47,5 @@
         <a href="https://github.com/GabrielRuizVarela">By Gabriel Ruiz Varela</a>
     </footer>
 </body>
+
 </html>
