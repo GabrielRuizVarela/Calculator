@@ -1,22 +1,24 @@
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-*{
+
+* {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
 }
+
 html {
     position: relative;
     min-height: 100%;
     display: block;
-    background-color: #FBF8F1;
+    background-color: #f3eddf;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,80 +27,110 @@ main{
     margin-bottom: 100px;
 }
 
-.gridContainer{
+.gridContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: repeat(5, 1fr); */
     grid-gap: 10px;
 }
 
-#brand{
+#brand {
     font-size: 16px;
-    /* justify-content: right; */
     text-align: right;
     padding-bottom: 5px;
 }
-.calculator{
+
+.calculator {
+    box-shadow: rgba(128, 128, 128, 0.591) 0px 3px 8px;
     border-radius: 5px;
     border: 2px;
     border-style: solid;
     padding: 20px;
     padding-top: 14px;
     background-color: #5dcac875;
-    /* background-color: #B7CADB; */
 }
 
-#deleteButton{
+#deleteButton {
     background-color: #fbd6d2;
 }
-#deleteButton:hover{
+
+#deleteButton:hover {
     background-color: #f8b5ae;
 }
 
-#clearButton, #deleteButton{
+#clearButton {
+    background-color: #d2cde9;
+}
+
+#clearButton:hover {
+    background-color: #bfb7e4;
+}
+
+#clearButton,
+#deleteButton {
     grid-column: span 2;
     aspect-ratio: auto;
 }
-button{
+
+button[data-operator]:hover,
+#dot:hover {
+    background-color: #f8b8cf;
+}
+
+button[data-operator],
+#dot {
+    background-color: #f9cfdf;
+}
+
+button {
     min-height: 60px;
-    /* box-sizing: border-box; */
-    /* border-width: 2px; */
+    box-shadow: rgba(128, 128, 128, 0.392) 1px 2px 4px;
     border-style: solid;
     border-radius: 5px;
     background-color: #F7ECDE;
     border-color: hsl(0, 13%, 3%);
-    /* padding: 20px; */
     aspect-ratio: 1;
-    /* font-size: 22px; */
 }
-button:hover{
-    background-color: hsl(22, 71%, 88%);
+
+button:hover {
+    background-color: #ffe6c2;
 }
-.screen{
+
+#screen {
+    padding: 0px 10px;
+    box-shadow: rgba(128, 128, 128, 0.29) 0px 2px 4px;
     border-width: 1px;
     border-color: black;
     border-style: solid;
     margin-bottom: 20px;
     border-radius: 5px;
-    background-color: #FBF8F1;
+    background-color: #faf5ea;
 }
 
-#pastScreen{
+.screen {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    vertical-align: middle;
+}
+
+#pastScreen {
     min-height: 32px;
 }
 
-#currentScreen{
+#currentScreen {
     min-height: 64px;
+    font-size: 32px;
 }
 
 
-a{
+a {
     color: black;
     text-decoration: none;
     font-size: 18px;
 }
 
-.footer{
+.footer {
     position: absolute;
     padding: 10px;
     bottom: 0;
