@@ -15,7 +15,7 @@ html {
     position: relative;
     min-height: 100%;
     display: block;
-    background-color: #f3eddf;
+    background-color: #f4f0e7;
 }
 
 main {
@@ -103,7 +103,7 @@ button:hover {
     border-style: solid;
     margin-bottom: 20px;
     border-radius: 5px;
-    background-color: #faf5ea;
+    background-color: #f9f5ef;
 }
 
 .screen {
