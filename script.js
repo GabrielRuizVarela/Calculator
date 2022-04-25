@@ -14,7 +14,6 @@ dot.addEventListener("click",setScreenDot);
 clearButton.addEventListener('click',clearScreen);
 deleteButton.addEventListener('click',deleteNumber);
 document.addEventListener("keydown", (event) =>{
-    console.log(event.key);
     if(event.key==='Enter'){
         document.getElementById('=').click();
     }
